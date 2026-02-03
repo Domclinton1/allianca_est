@@ -14,6 +14,35 @@
   --bg: linear-gradient(135deg, #020617, #0f172a);
   --bg-1: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
 }
+h2,
+h1,
+h3,
+h4,
+.btn-primary,
+.btn-accept {
+  text-transform: uppercase;
+}
+h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    #b8860b,
+    #ffd700,
+    #f5c542,
+    #fff1a8,
+    #d4a017
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 200% 100%;
+  animation: shineGold 4s ease-in-out infinite;
+
+  letter-spacing: 1px;
+}
 .title-gold {
   font-size: 3rem;
   font-weight: 800;
@@ -487,6 +516,24 @@ body {
     justify-content: center;
   }
 }
+/* Ajuste para ícones nos cards de serviço */
+.service-card i {
+  display: block;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.service-card:hover i {
+  transform: scale(1.1);
+  color: white !important; /* Muda o ícone para branco no hover para dar contraste */
+}
+
+/* Espaçamento extra para a seção de CTA na página de serviços */
+.services-cta {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+}
 .services {
   background: #0f0f0f;
   padding: 120px 20px;
@@ -812,4 +859,147 @@ body {
 }
 main {
   height: 100% auto;
+}
+/* Container do Modal de Cookies */
+.cookie-container {
+  position: fixed;
+  bottom: -100px; /* Começa escondido */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  background: rgba(15, 15, 15, 0.95); /* Fundo escuro semi-transparente */
+  border: 1px solid var(--gold);
+  border-radius: 15px;
+  padding: 20px 30px;
+  z-index: 9999;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  transition: bottom 0.5s ease-in-out;
+  backdrop-filter: blur(10px); /* Efeito de vidro */
+}
+
+/* Quando o modal estiver ativo */
+.cookie-container.active {
+  bottom: 30px;
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cookie-icon i {
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+.cookie-text p {
+  color: var(--silver);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.btn-accept {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.btn-accept:hover {
+  background: var(--gold-dark);
+  transform: scale(1.05);
+}
+
+/* Responsivo para Celular */
+@media (max-width: 768px) {
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .btn-accept {
+    width: 100%;
+  }
+}
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #128c7e;
+  color: #fff;
+}
+
+/* Tooltip (Legenda que aparece ao passar o mouse) */
+.tooltip-whatsapp {
+  position: absolute;
+  right: 75px;
+  background: #141414;
+  color: var(--gold);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  border: 1px solid var(--gold);
+}
+
+.whatsapp-float:hover .tooltip-whatsapp {
+  opacity: 1;
+}
+
+/* Animação de Pulsação */
+@keyframes pulse-whatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Ajuste para Mobile (não sobrepor o botão de cookies se estiver aberto) */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+  .tooltip-whatsapp {
+    display: none; /* Esconde o texto no mobile para não poluir */
+  }
 }

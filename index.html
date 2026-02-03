@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <div id="header-component"></div>
@@ -154,7 +158,6 @@
         </div>
       </section>
 
-      <section class="quick-contact"></section>
       <section class="contact-map">
         <div class="container">
           <div class="contact-grid">
@@ -199,10 +202,11 @@
             <!-- MAPA -->
             <div class="map-box">
               <iframe
-                src="https://www.google.com/maps?q=Betim%20MG&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.5443357251097!2d-44.152959599999996!3d-19.8592241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6eb94b49fdf09%3A0x80484f3bbca875e4!2sAv.%20Sycaba%2C%201188%20-%20Icaivera%2C%20Betim%20-%20MG%2C%2032611-292!5e0!3m2!1spt-BR!2sbr!4v1770152814060!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
                 loading="lazy"
-              >
-              </iframe>
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div class="contact-items">
@@ -214,8 +218,8 @@
 
             <div class="contact-item">
               <h3>Endereço</h3>
-              <p>Avenida Sycaba, 1188</p>
-              <p>Betim - MG</p>
+              <p>Av. Sycaba, 1188 - Icaivera</p>
+              <p>Betim - MG, 32611-292</p>
             </div>
 
             <div class="contact-item">
@@ -237,6 +241,35 @@
     </main>
 
     <div id="footer-component"></div>
+    <a
+      href="https://wa.me/5531997003750?text=Olá! Gostaria de solicitar um orçamento para engenharia de segurança."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Fale conosco no WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip-whatsapp">Orçamento Rápido</span>
+    </a>
+    <div id="cookie-banner" class="cookie-container">
+      <div class="cookie-content">
+        <div class="cookie-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="cookie-text">
+          <p>
+            Valorizamos sua privacidade. Utilizamos cookies para melhorar sua
+            experiência e garantir a segurança dos seus dados, conforme a
+            <strong>LGPD</strong>.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button id="accept-cookies" class="btn-accept">
+            Aceitar e Continuar
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

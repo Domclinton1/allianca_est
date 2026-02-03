@@ -5,16 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alliança</title>
     <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <div id="header-component"></div>
 
-    <main>
-      <!-- conteúdo da página -->
+    <main style="padding-top: 90px">
+      <section
+        class="hero"
+        style="
+          min-height: 40vh;
+          background:
+            linear-gradient(120deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+            url(&quot;../../assets/images/banner.png&quot;);
+        "
+      >
+        <div class="container" style="text-align: center">
+          <h1 class="title-gold">Nossos Serviços</h1>
+          <p class="title-silver" style="font-size: 1.2rem; margin-top: 10px">
+            Soluções completas em Engenharia de Segurança do Trabalho
+          </p>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services-grid">
+            <div class="service-card">
+              <i
+                class="fas fa-users-gear"
+                style="
+                  color: var(--gold);
+                  font-size: 2.5rem;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Treinamentos (NRs)</h3>
+              <p>
+                Capacitação técnica para NR-10, NR-12, NR-33, NR-35 e formação
+                de Brigada de Incêndio (NR-23).
+              </p>
+            </div>
+
+            <div class="service-card">
+              <i
+                class="fas fa-microscope"
+                style="
+                  color: var(--gold);
+                  font-size: 2.5rem;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Avaliações Ambientais</h3>
+              <p>
+                Medições de ruído ocupacional, agentes químicos, vibração, calor
+                e radiação com equipamentos calibrados.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <i
+                class="fas fa-file-contract"
+                style="
+                  color: var(--gold);
+                  font-size: 2.5rem;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Laudos e Documentos</h3>
+              <p>
+                Elaboração de PGR, PCMSO, LTCAT, além de laudos de Insalubridade
+                e Periculosidade.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <i
+                class="fas fa-chair"
+                style="
+                  color: var(--gold);
+                  font-size: 2.5rem;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Análise Ergonômica</h3>
+              <p>
+                Atendimento à NR-17 com análise postural laboral e
+                transformações no ambiente de trabalho.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <i
+                class="fas fa-gavel"
+                style="
+                  color: var(--gold);
+                  font-size: 2.5rem;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Perícias Trabalhistas</h3>
+              <p>
+                Assistência técnica em perícias de insalubridade, periculosidade
+                e acidentes de trabalho com equipe multidisciplinar.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <i
+                class="fas fa-briefcase"
+                style="
+                  color: var(--gold);
+                  font-size: 2.5rem;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Consultoria Especializada</h3>
+              <p>
+                Terceirização de SESMT, fiscalização de obras e monitoramento
+                contínuo de segurança.
+              </p>
+            </div>
+          </div>
+
+          <div class="services-cta">
+            <h2 class="title-silver">Precisa de uma solução personalizada?</h2>
+            <p>
+              Entre em contato com nossos engenheiros para um diagnóstico
+              gratuito da sua empresa.
+            </p>
+            <div
+              class="hero-buttons"
+              style="justify-content: center; margin-top: 30px"
+            >
+              <a href="../contato/index.html" class="btn-primary"
+                >Solicitar Orçamento</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <div id="footer-component"></div>
-
+    <a
+      href="https://wa.me/5531997003750?text=Olá! Gostaria de solicitar um orçamento para engenharia de segurança."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Fale conosco no WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip-whatsapp">Orçamento Rápido</span>
+    </a>
+    <div id="cookie-banner" class="cookie-container">
+      <div class="cookie-content">
+        <div class="cookie-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="cookie-text">
+          <p>
+            Valorizamos sua privacidade. Utilizamos cookies para melhorar sua
+            experiência e garantir a segurança dos seus dados, conforme a
+            <strong>LGPD</strong>.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button id="accept-cookies" class="btn-accept">
+            Aceitar e Continuar
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="/script.js"></script>
   </body>
 </html>

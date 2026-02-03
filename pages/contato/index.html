@@ -5,16 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alliança</title>
     <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <div id="header-component"></div>
 
-    <main>
-      <!-- conteúdo da página -->
+    <main
+      class="hero"
+      style="
+        flex-direction: column;
+        padding-top: 90px;
+        min-height: 30vh;
+        background:
+          linear-gradient(120deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)),
+          url(&quot;../../assets/images/banner.png&quot;);
+      "
+    >
+      <section>
+        <div class="container" style="text-align: center">
+          <h1 class="title-gold">Fale Conosco</h1>
+          <p class="title-silver">
+            Solicite orçamentos ou tire suas dúvidas com nossos especialistas
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-map">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-form">
+              <h2 style="color: var(--black); font-weight: 800">
+                Envie uma Mensagem
+              </h2>
+              <form action="../../enviar.php" method="POST">
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Nome Completo"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail Corporativo"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="telefone"
+                  placeholder="Telefone / WhatsApp"
+                />
+                <select
+                  name="assunto"
+                  style="
+                    padding: 12px;
+                    border-radius: 6px;
+                    border: none;
+                    font-size: 16px;
+                    background: white;
+                    margin-bottom: 5px;
+                  "
+                >
+                  <option value="orcamento">Solicitar Orçamento</option>
+                  <option value="treinamento">
+                    Dúvidas sobre Treinamentos
+                  </option>
+                  <option value="consultoria">Consultoria / Laudos</option>
+                  <option value="outros">Outros Assuntos</option>
+                </select>
+                <textarea
+                  name="mensagem"
+                  placeholder="Como podemos ajudar sua empresa?"
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn-primary"
+                  style="
+                    border: none;
+                    width: 100%;
+                    cursor: pointer;
+                    background: var(--black);
+                    color: var(--gold);
+                  "
+                >
+                  ENVIAR MENSAGEM
+                </button>
+              </form>
+            </div>
+
+            <div
+              class="map-box"
+              style="display: flex; flex-direction: column; gap: 20px"
+            >
+              <div
+                class="contact-info-cards"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px"
+              >
+                <div class="contact-box highlight" style="padding: 20px">
+                  <i
+                    class="fas fa-phone-alt"
+                    style="color: var(--gold); margin-bottom: 10px"
+                  ></i>
+                  <h4 style="margin-bottom: 5px">Telefones</h4>
+                  <p>(31) 3352-6136</p>
+                  <p>(31) 99700-3750</p>
+                </div>
+                <div class="contact-box highlight" style="padding: 20px">
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366; margin-bottom: 10px"
+                  ></i>
+                  <h4 style="margin-bottom: 5px">WhatsApp</h4>
+                  <p>Atendimento Imediato</p>
+                  <a
+                    href="https://wa.me/5531997003750"
+                    target="_blank"
+                    style="color: var(--gold); text-decoration: none"
+                    >Chamar Agora</a
+                  >
+                </div>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.5443357251097!2d-44.152959599999996!3d-19.8592241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6eb94b49fdf09%3A0x80484f3bbca875e4!2sAv.%20Sycaba%2C%201188%20-%20Icaivera%2C%20Betim%20-%20MG%2C%2032611-292!5e0!3m2!1spt-BR!2sbr!4v1770152814060!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <p class="title-silver">
+                Estamos localizados no endereço
+                <a
+                  href="https://maps.app.goo.gl/qfjrfXAfZNtyZMVE8"
+                  target="_blank"
+                  >Av. Sycaba, 1188 - IcaiveraBetim - MG, 32611-292</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div id="footer-component"></div>
-
+    <a
+      href="https://wa.me/5531997003750?text=Olá! Gostaria de solicitar um orçamento para engenharia de segurança."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Fale conosco no WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip-whatsapp">Orçamento Rápido</span>
+    </a>
+    <div id="cookie-banner" class="cookie-container">
+      <div class="cookie-content">
+        <div class="cookie-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="cookie-text">
+          <p>
+            Valorizamos sua privacidade. Utilizamos cookies para melhorar sua
+            experiência e garantir a segurança dos seus dados, conforme a
+            <strong>LGPD</strong>.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button id="accept-cookies" class="btn-accept">
+            Aceitar e Continuar
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="/script.js"></script>
   </body>
 </html>

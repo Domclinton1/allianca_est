@@ -5,16 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alliança</title>
     <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <div id="header-component"></div>
+    <main style="padding-top: 90px">
+      <section
+        class="hero"
+        style="
+          min-height: 40vh;
+          background:
+            linear-gradient(120deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+            url(&quot;../../assets/images/banner.png&quot;);
+        "
+      >
+        <div class="container" style="text-align: center">
+          <h1 class="title-gold">Nossa História</h1>
+          <p class="title-silver" style="font-size: 1.2rem; margin-top: 10px">
+            Excelência e Compromisso com a Segurança do Trabalho
+          </p>
+        </div>
+      </section>
 
-    <main>
-      <!-- conteúdo da página -->
+      <section class="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <h2 class="title-gold" style="font-size: 2.2rem">Quem Somos</h2>
+              <p>
+                A Alliança Engenharia de Segurança do Trabalho atua com
+                excelência na prestação de serviços especializados em
+                treinamentos regulamentados, prevenção de riscos ocupacionais e
+                adequação às normas legais.
+              </p>
+              <p>
+                Com sede em Betim-MG e mais de uma década de experiência, nossa
+                equipe técnica é composta por engenheiros e especialistas
+                focados em entregar conformidade legal e proteger vidas.
+              </p>
+
+              <div class="about-highlight" style="margin-top: 40px">
+                <div class="highlight-box">
+                  <strong>+10</strong>
+                  <span>Anos de experiência</span>
+                </div>
+                <div class="highlight-box">
+                  <strong>+500</strong>
+                  <span>Treinamentos</span>
+                </div>
+                <div class="highlight-box">
+                  <strong>100%</strong>
+                  <span>Conformidade</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img
+                src="/assets/icons/logo.png"
+                alt="Alliança Engenharia"
+                style="
+                  opacity: 0.8;
+                  max-width: 300px;
+                  margin: 0 auto;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title title-silver">Nossa Cultura</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <h3 style="color: var(--gold); margin-bottom: 15px">Missão</h3>
+              <p>
+                Garantir a integridade física dos colaboradores através de
+                soluções técnicas e treinamentos de alta qualidade.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3 style="color: var(--gold); margin-bottom: 15px">Visão</h3>
+              <p>
+                Ser reconhecida como a maior parceira estratégica em engenharia
+                de segurança em Minas Gerais.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3 style="color: var(--gold); margin-bottom: 15px">Valores</h3>
+              <p>
+                Ética, Rigor Técnico, Transparência e Foco na Valorização da
+                Vida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <div id="footer-component"></div>
-
+    <a
+      href="https://wa.me/5531997003750?text=Olá! Gostaria de solicitar um orçamento para engenharia de segurança."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Fale conosco no WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip-whatsapp">Orçamento Rápido</span>
+    </a>
+    <div id="cookie-banner" class="cookie-container">
+      <div class="cookie-content">
+        <div class="cookie-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="cookie-text">
+          <p>
+            Valorizamos sua privacidade. Utilizamos cookies para melhorar sua
+            experiência e garantir a segurança dos seus dados, conforme a
+            <strong>LGPD</strong>.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button id="accept-cookies" class="btn-accept">
+            Aceitar e Continuar
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="/script.js"></script>
   </body>
 </html>
