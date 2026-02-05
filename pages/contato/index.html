@@ -9,24 +9,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <style>
+      @media screen and (max-width: 768px) {
+        .container h2 {
+          font-size: 1.8rem;
+        }
+        .container p {
+          font-size: 1.2rem;
+        }
+        section,
+        .container {
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact-map .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .contato-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .contact-info-cards {
+          flex-direction: column;
+          display: flex;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="header-component"></div>
 
-    <main
-      class="hero"
-      style="
-        flex-direction: column;
-        padding-top: 90px;
-        min-height: 30vh;
-        background:
-          linear-gradient(120deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)),
-          url(&quot;../../assets/images/banner.png&quot;);
-        background-size: cover;
-        background-attachment: fixed;
-      "
-    >
-      <section>
+    <main>
+      <section class="hero">
         <div class="container" style="text-align: center">
           <h1 class="title-gold">Fale Conosco</h1>
           <p class="title-silver">
@@ -42,7 +65,7 @@
               <h2 style="color: var(--black); font-weight: 800">
                 Envie uma Mensagem
               </h2>
-              <form action="../../enviar.php" method="POST">
+              <form action="/enviar.php" method="POST">
                 <input
                   type="text"
                   name="nome"
@@ -105,7 +128,13 @@
             >
               <div
                 class="contact-info-cards"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px"
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 15px;
+                  align-items: stretch;
+                  justify-content: center;
+                "
               >
                 <div class="contact-box highlight" style="padding: 20px">
                   <i
