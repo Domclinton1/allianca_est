@@ -1,20 +1,28 @@
 <header class="header" id="header">
   <div class="nav-left">
     <a href="/" class="logo">
-      <img src="/assets/icons/logo-2.png" alt="Logomarca" />
+      <img
+        src="/assets/icons/logo.png"
+        class="logo-desktop"
+        alt="Logo Desktop"
+      />
+      <img
+        src="/assets/icons/logo-2.png"
+        class="logo-mobile"
+        alt="Logo Mobile"
+      />
     </a>
   </div>
 
   <div class="nav-center">
-    <!-- BOTÃO MOBILE -->
-    <button class="menu-toggle" id="menu-toggle">☰</button>
-
-    <nav class="menu" id="menu">
+    <nav class="desktop" id="desktop">
       <a href="/">Home</a>
       <a href="/pages/empresa/index.html">Empresa</a>
       <a href="/pages/servicos/index.html">Serviços</a>
       <a href="/pages/contato/index.html">Contato</a>
     </nav>
+    <!-- BOTÃO MOBILE -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
   </div>
 
   <div class="nav-right">
@@ -24,6 +32,16 @@
     </nav>
   </div>
 </header>
+
+<!-- MENU MOBILE FORA DO HEADER -->
+<nav class="menu" id="menu">
+  <a href="/">Home</a>
+  <a href="/pages/empresa/index.html">Empresa</a>
+  <a href="/pages/servicos/index.html">Serviços</a>
+  <a href="/pages/contato/index.html">Contato</a>
+  <a href="https://wa.me/5531997003750">(31) 99700-3750</a>
+  <a href="tel:+553133526136">(31) 3352-6136</a>
+</nav>
 
 <!-- OVERLAY -->
 <div class="menu-overlay" id="menu-overlay"></div>

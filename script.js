@@ -58,21 +58,26 @@ function initHeader() {
     overlay.classList.remove("active");
   });
 }
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const cookieBanner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("accept-cookies");
 
-  // Verifica se o usuário já aceitou os cookies anteriormente
+  if (!cookieBanner || !acceptBtn) return;
+
   if (!localStorage.getItem("cookiesAceitos")) {
-    // Pequeno delay para aparecer após o site carregar
     setTimeout(() => {
       cookieBanner.classList.add("active");
-    }, 2000);
+    }, 1500);
   }
 
-  // Função para clicar no botão
-  acceptBtn.addEventListener("click", function () {
+  acceptBtn.addEventListener("click", () => {
     localStorage.setItem("cookiesAceitos", "true");
+
     cookieBanner.classList.remove("active");
+
+    // segurança extra pra mobile
+    setTimeout(() => {
+      cookieBanner.style.display = "none";
+    }, 500);
   });
 });
