@@ -424,12 +424,16 @@ body {
   }
 
   .hero-content p {
-    margin: 0 auto 35px;
+    margin: 0 auto 15px;
+    font-size: 0.5rem;
   }
 
   .hero-buttons {
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .hero h1 span {
+    font-size: 1.2rem;
   }
 }
 
@@ -923,6 +927,7 @@ main {
   .cookie-content {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 100px;
   }
   .btn-accept {
     width: 100%;
@@ -1001,5 +1006,50 @@ main {
   }
   .tooltip-whatsapp {
     display: none; /* Esconde o texto no mobile para não poluir */
+  }
+  section {
+    max-width: 768px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .services-grid,
+  .about-highlight,
+  .features-grid,
+  .contact-map,
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .services {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .contact-form,
+  .map-box {
+    max-width: 300px;
+    width: 100%;
+  }
+  .contact-items {
+    flex-wrap: wrap;
+  }
+  .services .container {
+    padding: 10px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlight-box {
+    max-width: 300px;
+    width: 100%;
+  }
+  .feature-item {
+    max-width: 300px;
+    width: 100%;
+  }
+  .btn-primary {
+    max-width: fit-content;
   }
 }
