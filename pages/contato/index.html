@@ -65,26 +65,31 @@
               <h2 style="color: var(--black); font-weight: 800">
                 Envie uma Mensagem
               </h2>
-              <form action="/enviar.php" method="POST">
+
+              <form id="whatsappForm">
                 <input
                   type="text"
-                  name="nome"
+                  id="nome"
                   placeholder="Nome Completo"
                   required
                 />
+
                 <input
                   type="email"
-                  name="email"
+                  id="email"
                   placeholder="E-mail Corporativo"
                   required
                 />
+
                 <input
                   type="tel"
-                  name="telefone"
+                  id="telefone"
                   placeholder="Telefone / WhatsApp"
+                  required
                 />
+
                 <select
-                  name="assunto"
+                  id="assunto"
                   style="
                     padding: 12px;
                     border-radius: 6px;
@@ -94,18 +99,24 @@
                     margin-bottom: 5px;
                   "
                 >
-                  <option value="orcamento">Solicitar Orçamento</option>
-                  <option value="treinamento">
+                  <option value="Solicitar Orçamento">
+                    Solicitar Orçamento
+                  </option>
+                  <option value="Dúvidas sobre Treinamentos">
                     Dúvidas sobre Treinamentos
                   </option>
-                  <option value="consultoria">Consultoria / Laudos</option>
-                  <option value="outros">Outros Assuntos</option>
+                  <option value="Consultoria / Laudos">
+                    Consultoria / Laudos
+                  </option>
+                  <option value="Outros Assuntos">Outros Assuntos</option>
                 </select>
+
                 <textarea
-                  name="mensagem"
+                  id="mensagem"
                   placeholder="Como podemos ajudar sua empresa?"
                   required
                 ></textarea>
+
                 <button
                   type="submit"
                   class="btn-primary"
@@ -117,7 +128,7 @@
                     color: var(--gold);
                   "
                 >
-                  ENVIAR MENSAGEM
+                  ENVIAR PELO WHATSAPP
                 </button>
               </form>
             </div>

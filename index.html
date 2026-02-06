@@ -242,39 +242,74 @@
           <div class="contact-grid">
             <!-- FORMULÁRIO -->
             <div class="contact-form">
-              <h2>Fale Conosco</h2>
+              <h2 style="color: var(--black); font-weight: 800">
+                Envie uma Mensagem
+              </h2>
 
-              <form action="enviar.php" method="POST">
+              <form id="whatsappForm">
                 <input
                   type="text"
-                  name="nome"
-                  placeholder="Seu nome"
+                  id="nome"
+                  placeholder="Nome Completo"
                   required
                 />
 
                 <input
                   type="email"
-                  name="email"
-                  placeholder="Seu e-mail"
+                  id="email"
+                  placeholder="E-mail Corporativo"
                   required
                 />
 
                 <input
                   type="tel"
-                  name="telefone"
-                  placeholder="Telefone"
+                  id="telefone"
+                  placeholder="Telefone / WhatsApp"
                   required
                 />
 
-                <input type="text" name="assunto" placeholder="Assunto" />
+                <select
+                  id="assunto"
+                  style="
+                    padding: 12px;
+                    border-radius: 6px;
+                    border: none;
+                    font-size: 16px;
+                    background: white;
+                    margin-bottom: 5px;
+                  "
+                >
+                  <option value="Solicitar Orçamento">
+                    Solicitar Orçamento
+                  </option>
+                  <option value="Dúvidas sobre Treinamentos">
+                    Dúvidas sobre Treinamentos
+                  </option>
+                  <option value="Consultoria / Laudos">
+                    Consultoria / Laudos
+                  </option>
+                  <option value="Outros Assuntos">Outros Assuntos</option>
+                </select>
 
                 <textarea
-                  name="mensagem"
-                  placeholder="Como podemos ajudar?"
+                  id="mensagem"
+                  placeholder="Como podemos ajudar sua empresa?"
                   required
                 ></textarea>
 
-                <button type="submit">Enviar Mensagem</button>
+                <button
+                  type="submit"
+                  class="btn-primary"
+                  style="
+                    border: none;
+                    width: 100%;
+                    cursor: pointer;
+                    background: var(--black);
+                    color: var(--gold);
+                  "
+                >
+                  ENVIAR PELO WHATSAPP
+                </button>
               </form>
             </div>
 
