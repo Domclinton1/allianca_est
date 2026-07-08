@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <style>
       @media screen and (max-width: 768px) {
         .container h2 {
@@ -35,6 +35,41 @@
           flex-direction: column;
           gap: 1rem;
         }
+        .btn-primary {
+          width: fit-content;
+        }
+      }
+      .section-dark .container,
+      .section-light .container,
+      .cta-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 2rem;
+      }
+
+      .section-light .btn-primary {
+        width: fit-content;
+      }
+      body {
+        text-align: center;
+      }
+      .hero {
+        justify-content: center;
+        align-items: center;
+      }
+      .hero .container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .title-silver {
+        margin: 0 auto;
+        list-style: none;
+      }
+      .hero-buttons {
+        justify-content: center;
       }
     </style>
   </head>
@@ -101,6 +136,7 @@
       <a
         href="https://wa.me/5531997003750?text=Olá! Vim pelo site e gostaria de saber mais sobre NR12."
         class="btn-primary"
+        style="width: fit-content; margin: 40px auto"
       >
         Solicitar Proposta
       </a>
@@ -134,6 +170,7 @@
         <a
           href="https://wa.me/5531997003750?text=Olá! Vim pelo site e gostaria de saber mais sobre NR12."
           class="btn-primary"
+          style="width: fit-content; margin: 40px auto"
         >
           Solicitar Proposta
         </a>
@@ -192,6 +229,7 @@
         <a
           href="https://wa.me/5531997003750?text=Olá! Vim pelo site e gostaria de saber mais sobre NR12."
           class="btn-primary"
+          style="width: fit-content; margin: 40px auto"
         >
           Solicitar Proposta
         </a>

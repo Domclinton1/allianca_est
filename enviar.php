@@ -6,7 +6,7 @@ $telefone = $_POST['telefone'];
 $assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
 
-$para = "contato@alliancaest.com.br"; // troca pelo seu email real
+$para = "contato@alliancaest.com.br"; 
 
 $texto = "
 Nome: $nome
